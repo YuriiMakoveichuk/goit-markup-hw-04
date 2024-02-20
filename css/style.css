@@ -52,6 +52,28 @@ img {
     overflow: hidden;
 }
 
+.icons {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.icons-list {
+    display: flex;
+    background-color: #4d5ae5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-list:hover,
+.icons-list:focus {
+    background-color: #404bbf;
+}
+
+
 /* Header */
 
 .header-section {
@@ -91,6 +113,13 @@ img {
     gap: 40px;
 }
 
+.page-header-item::after {
+    display: block;
+    content: "";
+    border-radius: 2px;
+    height: 4px;
+}
+
 .page-header-link {
     color: #2E2F42;
     font-weight: 500;
@@ -101,6 +130,11 @@ img {
 .page-header-link:hover,
 .page-header-link:focus {
     color: #404BBF;
+}
+
+.page-header-item:hover::after,
+.page-header-item:focus::after {
+    background-color: #404bbf;
 }
 
 .contacts-list {
@@ -153,6 +187,11 @@ img {
     background-color: #2E2F42;
     padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440px;
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/hero-img/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .hero-title {
@@ -198,6 +237,16 @@ img {
     margin-bottom: 8px;
 }
 
+.advantages-icon {
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
 /* Team */
 
 .section-team {
@@ -217,10 +266,11 @@ img {
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
     border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-block {
-    padding: 32px 0;
+    padding: 32px 0 ;
 }
 
 .team-card-name {
@@ -230,6 +280,7 @@ img {
 
 .team-card-text {
     text-align: center;
+    margin-bottom: 8px;
 }
 
 /* Portfolio */
@@ -269,6 +320,11 @@ img {
     padding-bottom: 100px;
 }
 
+.footer-container {
+    display: flex;
+    gap: 120px;
+}
+
 .logo-footer {
     color: #F4F4FD;
 }
@@ -279,4 +335,19 @@ img {
 
 .footer-text {
     max-width: 264px;
+}
+
+.footer-paragraph {
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.footer-icons {
+    gap: 16px;
+    justify-content: normal;
+}
+
+.footer-icons-svg:hover,
+.footer-icons-svg:focus {
+    background-color: #31d0aa;
 }
