@@ -52,10 +52,16 @@ img {
     overflow: hidden;
 }
 
+/* Icons */
+
 .icons {
     display: flex;
     gap: 24px;
     justify-content: center;
+}
+
+.icons-svg {
+    height: 16px;
 }
 
 .icons-list {
@@ -250,6 +256,10 @@ img {
     padding-bottom: 24px;
     text-align: center;
     margin-bottom: 8px;
+}
+
+.advantages-icon-svg {
+    height: 64px;
 }
 
 /* Team */
