@@ -121,23 +121,6 @@ img {
     gap: 40px;
 }
 
-.page-header-item {
-    position: relative;
-}
-
-
-
-.page-header-item::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    left: 0;
-    height: 4px;
-    bottom: -1px;
-    border-radius: 2px;
-}
-
-
 .page-header-link {
     color: #2E2F42;
     font-weight: 500;
@@ -151,9 +134,20 @@ img {
     color: #404BBF;
 }
 
-.page-header-item:hover::after,
-.page-header-item:focus::after {
-    background-color: #404bbf;
+.link-active {
+    position: relative;
+    color: #404BBF;
+}
+
+.link-active::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    height: 4px;
+    bottom: -1px;
+    border-radius: 2px;
+    background-color: #404BBF;
 }
 
 .contacts-list {
